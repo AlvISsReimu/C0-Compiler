@@ -1,0 +1,46 @@
+const int gc_x = 0;
+const char gc_c1 = 'a', gc_c2 = 'z';
+int g_x, g_y[5];
+
+int add(int a, int b)
+{
+	int t;
+	t = a + b;
+	return (t);
+}
+
+char fun()
+{
+	return ('a' + 5);
+}
+
+void empty() {}
+
+void output(int n, char c)
+{
+	printf(c);
+	printf(" = ");
+	printf(n);
+	return;
+}
+
+void main()
+{
+	int i, s;
+	{}
+	;;;
+	empty();
+	scanf(i);
+	if (i != 0)
+		i = 0;
+	else
+		printF("good!\n");
+	while (i < 10){
+		s = AdD(i, s);
+		i = i + 1;
+	}
+	for (i = 0;i < 5;i = i + 1)
+		g_y[i] = s * s  / (i + 1);
+	output(s, 's');
+	printf(fun());
+}

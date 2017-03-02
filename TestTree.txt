@@ -1,0 +1,564 @@
+<PROGRAM>
+Child:
+	<CONSTDEC>
+	<VARDEC>
+	Child:
+		<VARDEF>
+		Child:
+			[int]
+			[k]
+			[100]
+		Child End -- VARDEF 
+	Child End -- VARDEC 
+	<FUNCDEF>
+	Child:
+		[void]
+		[QuickSort]
+		<PARATABLE>
+		Child:
+			[int]
+			Sibling:
+				[int]
+			Sibling end -- OTHER int
+			[s]
+			Sibling:
+				[t]
+			Sibling end -- IDENTIFIER s
+		Child End -- PARATABLE 
+		<COMPSTMT>
+		Child:
+			<CONSTDEC>
+			<VARDEC>
+			Child:
+				<VARDEF>
+				Child:
+					[int]
+					[i]
+					Sibling:
+						[j]
+						Sibling:
+							[Whileflag]
+							Sibling:
+								[WhileFlag2]
+							Sibling end -- IDENTIFIER Whileflag
+						Sibling end -- IDENTIFIER j
+					Sibling end -- IDENTIFIER i
+					[0]
+					Sibling:
+						[0]
+						Sibling:
+							[0]
+							Sibling:
+								[0]
+							Sibling end -- OTHER 0
+						Sibling end -- OTHER 0
+					Sibling end -- OTHER 0
+				Child End -- VARDEF 
+			Child End -- VARDEC 
+			<STMTLIST>
+			Child:
+				<ASSIGNSTMT>
+				Child:
+					[Whileflag]
+					[1]
+				Child End -- ASSIGNSTMT 
+				Sibling:
+					<CONDSTMT>
+					Child:
+						<LSS>
+						Child:
+							[s]
+							[t]
+						Child End -- LSS 
+						<STMTLIST>
+						Child:
+							<ASSIGNSTMT>
+							Child:
+								[i]
+								[s]
+							Child End -- ASSIGNSTMT 
+							Sibling:
+								<ASSIGNSTMT>
+								Child:
+									[j]
+									<PLUS>
+									Child:
+										[t]
+										[1]
+									Child End -- PLUS 
+								Child End -- ASSIGNSTMT 
+								Sibling:
+									<WHILESTMT>
+									Child:
+										<EQL>
+										Child:
+											[Whileflag]
+											[1]
+										Child End -- EQL 
+										<STMTLIST>
+										Child:
+											<ASSIGNSTMT>
+											Child:
+												[i]
+												<PLUS>
+												Child:
+													[i]
+													[1]
+												Child End -- PLUS 
+											Child End -- ASSIGNSTMT 
+											Sibling:
+												<ASSIGNSTMT>
+												Child:
+													[WhileFlag2]
+													[0]
+												Child End -- ASSIGNSTMT 
+												Sibling:
+													<CONDSTMT>
+													Child:
+														<GRE>
+														Child:
+															[k]
+															Child:
+																[s]
+															Child End -- IDENTIFIER k
+															[k]
+															Child:
+																[i]
+															Child End -- IDENTIFIER k
+														Child End -- GRE 
+														<STMTLIST>
+														Child:
+															<CONDSTMT>
+															Child:
+																<NEQ>
+																Child:
+																	[i]
+																	[t]
+																Child End -- NEQ 
+																<ASSIGNSTMT>
+																Child:
+																	[WhileFlag2]
+																	[1]
+																Child End -- ASSIGNSTMT 
+															Child End -- CONDSTMT 
+														Child End -- STMTLIST 
+													Child End -- CONDSTMT 
+													Sibling:
+														<WHILESTMT>
+														Child:
+															<EQL>
+															Child:
+																[WhileFlag2]
+																[1]
+															Child End -- EQL 
+															<STMTLIST>
+															Child:
+																<ASSIGNSTMT>
+																Child:
+																	[i]
+																	<PLUS>
+																	Child:
+																		[i]
+																		[1]
+																	Child End -- PLUS 
+																Child End -- ASSIGNSTMT 
+																Sibling:
+																	<ASSIGNSTMT>
+																	Child:
+																		[WhileFlag2]
+																		[0]
+																	Child End -- ASSIGNSTMT 
+																	Sibling:
+																		<CONDSTMT>
+																		Child:
+																			<GRE>
+																			Child:
+																				[k]
+																				Child:
+																					[s]
+																				Child End -- IDENTIFIER k
+																				[k]
+																				Child:
+																					[i]
+																				Child End -- IDENTIFIER k
+																			Child End -- GRE 
+																			<STMTLIST>
+																			Child:
+																				<CONDSTMT>
+																				Child:
+																					<NEQ>
+																					Child:
+																						[i]
+																						[t]
+																					Child End -- NEQ 
+																					<ASSIGNSTMT>
+																					Child:
+																						[WhileFlag2]
+																						[1]
+																					Child End -- ASSIGNSTMT 
+																				Child End -- CONDSTMT 
+																			Child End -- STMTLIST 
+																		Child End -- CONDSTMT 
+																	Sibling end -- ASSIGNSTMT 
+																Sibling end -- ASSIGNSTMT 
+															Child End -- STMTLIST 
+														Child End -- WHILESTMT 
+														Sibling:
+															<ASSIGNSTMT>
+															Child:
+																[j]
+																<MINU>
+																Child:
+																	[j]
+																	[1]
+																Child End -- MINU 
+															Child End -- ASSIGNSTMT 
+															Sibling:
+																<ASSIGNSTMT>
+																Child:
+																	[WhileFlag2]
+																	[0]
+																Child End -- ASSIGNSTMT 
+																Sibling:
+																	<CONDSTMT>
+																	Child:
+																		<LSS>
+																		Child:
+																			[k]
+																			Child:
+																				[s]
+																			Child End -- IDENTIFIER k
+																			[k]
+																			Child:
+																				[i]
+																			Child End -- IDENTIFIER k
+																		Child End -- LSS 
+																		<STMTLIST>
+																		Child:
+																			<CONDSTMT>
+																			Child:
+																				<NEQ>
+																				Child:
+																					[j]
+																					[s]
+																				Child End -- NEQ 
+																				<ASSIGNSTMT>
+																				Child:
+																					[WhileFlag2]
+																					[1]
+																				Child End -- ASSIGNSTMT 
+																			Child End -- CONDSTMT 
+																		Child End -- STMTLIST 
+																	Child End -- CONDSTMT 
+																	Sibling:
+																		<WHILESTMT>
+																		Child:
+																			<EQL>
+																			Child:
+																				[WhileFlag2]
+																				[1]
+																			Child End -- EQL 
+																			<STMTLIST>
+																			Child:
+																				<ASSIGNSTMT>
+																				Child:
+																					[j]
+																					<MINU>
+																					Child:
+																						[j]
+																						[1]
+																					Child End -- MINU 
+																				Child End -- ASSIGNSTMT 
+																				Sibling:
+																					<ASSIGNSTMT>
+																					Child:
+																						[WhileFlag2]
+																						[0]
+																					Child End -- ASSIGNSTMT 
+																					Sibling:
+																						<CONDSTMT>
+																						Child:
+																							<LSS>
+																							Child:
+																								[k]
+																								Child:
+																									[s]
+																								Child End -- IDENTIFIER k
+																								[k]
+																								Child:
+																									[i]
+																								Child End -- IDENTIFIER k
+																							Child End -- LSS 
+																							<STMTLIST>
+																							Child:
+																								<CONDSTMT>
+																								Child:
+																									<NEQ>
+																									Child:
+																										[j]
+																										[s]
+																									Child End -- NEQ 
+																									<ASSIGNSTMT>
+																									Child:
+																										[WhileFlag2]
+																										[1]
+																									Child End -- ASSIGNSTMT 
+																								Child End -- CONDSTMT 
+																							Child End -- STMTLIST 
+																						Child End -- CONDSTMT 
+																					Sibling end -- ASSIGNSTMT 
+																				Sibling end -- ASSIGNSTMT 
+																			Child End -- STMTLIST 
+																		Child End -- WHILESTMT 
+																		Sibling:
+																			<CONDSTMT>
+																			Child:
+																				<LSS>
+																				Child:
+																					[i]
+																					[j]
+																				Child End -- LSS 
+																				<CALLSTMT>
+																				<ASSIGNSTMT>
+																				Child:
+																					[Whileflag]
+																					[0]
+																				Child End -- ASSIGNSTMT 
+																			Child End -- CONDSTMT 
+																		Sibling end -- WHILESTMT 
+																	Sibling end -- CONDSTMT 
+																Sibling end -- ASSIGNSTMT 
+															Sibling end -- ASSIGNSTMT 
+														Sibling end -- WHILESTMT 
+													Sibling end -- CONDSTMT 
+												Sibling end -- ASSIGNSTMT 
+											Sibling end -- ASSIGNSTMT 
+										Child End -- STMTLIST 
+									Child End -- WHILESTMT 
+									Sibling:
+										<CALLSTMT>
+										Sibling:
+											<CALLSTMT>
+											Child:
+												[QuickSort]
+												[s]
+												Sibling:
+													<MINU>
+													Child:
+														[j]
+														[1]
+													Child End -- MINU 
+												Sibling end -- IDENTIFIER s
+											Child End -- CALLSTMT 
+											Sibling:
+												<CALLSTMT>
+												Child:
+													[QuickSort]
+													<PLUS>
+													Child:
+														[j]
+														[1]
+													Child End -- PLUS 
+													Sibling:
+														[t]
+													Sibling end -- PLUS 
+												Child End -- CALLSTMT 
+											Sibling end -- CALLSTMT 
+										Sibling end -- CALLSTMT 
+									Sibling end -- WHILESTMT 
+								Sibling end -- ASSIGNSTMT 
+							Sibling end -- ASSIGNSTMT 
+						Child End -- STMTLIST 
+					Child End -- CONDSTMT 
+				Sibling end -- ASSIGNSTMT 
+			Child End -- STMTLIST 
+		Child End -- COMPSTMT 
+	Child End -- FUNCDEF 
+	Sibling:
+		<FUNCDEF>
+		Child:
+			[void]
+			[swap]
+			<PARATABLE>
+			Child:
+				[int]
+				Sibling:
+					[int]
+				Sibling end -- OTHER int
+				[a]
+				Sibling:
+					[b]
+				Sibling end -- IDENTIFIER a
+			Child End -- PARATABLE 
+			<COMPSTMT>
+			Child:
+				<CONSTDEC>
+				<VARDEC>
+				Child:
+					<VARDEF>
+					Child:
+						[int]
+						[t]
+						[0]
+					Child End -- VARDEF 
+				Child End -- VARDEC 
+				<STMTLIST>
+				Child:
+					<ASSIGNSTMT>
+					Child:
+						[t]
+						[k]
+						Child:
+							[a]
+						Child End -- IDENTIFIER k
+					Child End -- ASSIGNSTMT 
+					Sibling:
+						<ASSIGNSTMT>
+						Child:
+							[k]
+							[a]
+							[k]
+							Child:
+								[b]
+							Child End -- IDENTIFIER k
+						Child End -- ASSIGNSTMT 
+						Sibling:
+							<ASSIGNSTMT>
+							Child:
+								[k]
+								[b]
+								[t]
+							Child End -- ASSIGNSTMT 
+						Sibling end -- ASSIGNSTMT 
+					Sibling end -- ASSIGNSTMT 
+				Child End -- STMTLIST 
+			Child End -- COMPSTMT 
+		Child End -- FUNCDEF 
+		Sibling:
+			<FUNCDEF>
+			Child:
+				[void]
+				[main]
+				<PARATABLE>
+				<COMPSTMT>
+				Child:
+					<CONSTDEC>
+					<VARDEC>
+					Child:
+						<VARDEF>
+						Child:
+							[int]
+							[n]
+							Sibling:
+								[i]
+								Sibling:
+									[t]
+								Sibling end -- IDENTIFIER i
+							Sibling end -- IDENTIFIER n
+							[0]
+							Sibling:
+								[0]
+								Sibling:
+									[0]
+								Sibling end -- OTHER 0
+							Sibling end -- OTHER 0
+						Child End -- VARDEF 
+					Child End -- VARDEC 
+					<STMTLIST>
+					Child:
+						<PRINTSTMT>
+						Child:
+							[Please input n(1<=n<=100):\n]
+						Child End -- PRINTSTMT 
+						Sibling:
+							<SCANSTMT>
+							Child:
+								[n]
+							Child End -- SCANSTMT 
+							Sibling:
+								<CONDSTMT>
+								Child:
+									<LSS>
+									Child:
+										[n]
+										[1]
+									Child End -- LSS 
+									<RETURNSTMT>
+								Child End -- CONDSTMT 
+								Sibling:
+									<CONDSTMT>
+									Child:
+										<GRE>
+										Child:
+											[n]
+											[100]
+										Child End -- GRE 
+										<RETURNSTMT>
+									Child End -- CONDSTMT 
+									Sibling:
+										<FORSTMT>
+										Child:
+											[i]
+											Sibling:
+												[i]
+												Sibling:
+													[i]
+												Sibling end -- IDENTIFIER i
+											Sibling end -- IDENTIFIER i
+											[0]
+											<LSS>
+											Child:
+												[i]
+												[n]
+											Child End -- LSS 
+											[+]
+											[1]
+											<STMTLIST>
+											Child:
+												<PRINTSTMT>
+												Child:
+													[Please input k[]
+													[i]
+												Child End -- PRINTSTMT 
+												Sibling:
+													<PRINTSTMT>
+													Child:
+														[]:\n]
+													Child End -- PRINTSTMT 
+													Sibling:
+														<SCANSTMT>
+														Child:
+															[t]
+														Child End -- SCANSTMT 
+														Sibling:
+															<ASSIGNSTMT>
+															Child:
+																[k]
+																[i]
+																[t]
+															Child End -- ASSIGNSTMT 
+														Sibling end -- SCANSTMT 
+													Sibling end -- PRINTSTMT 
+												Sibling end -- PRINTSTMT 
+											Child End -- STMTLIST 
+										Child End -- FORSTMT 
+										Sibling:
+											<CALLSTMT>
+											Child:
+												[QuickSort]
+												[1]
+												Sibling:
+													[n]
+												Sibling end -- INTEGER 1
+											Child End -- CALLSTMT 
+										Sibling end -- FORSTMT 
+									Sibling end -- CONDSTMT 
+								Sibling end -- CONDSTMT 
+							Sibling end -- SCANSTMT 
+						Sibling end -- PRINTSTMT 
+					Child End -- STMTLIST 
+				Child End -- COMPSTMT 
+			Child End -- FUNCDEF 
+		Sibling end -- FUNCDEF 
+	Sibling end -- FUNCDEF 
+Child End -- PROGRAM 

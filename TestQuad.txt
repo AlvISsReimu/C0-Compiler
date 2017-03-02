@@ -1,0 +1,69 @@
+_add:
+	BeginFunc 8;
+	_tmp0 = a + b;
+	t = _tmp0;
+	Return t;
+	EndFunc;
+_fun:
+	BeginFunc 8;
+	_tmp1 = 'a';
+	_tmp2 = _tmp1 + 5;
+	Return _tmp2;
+	EndFunc;
+_empty:
+	BeginFunc 0;
+	EndFunc;
+_output:
+	BeginFunc 0;
+	PrintPushParam c;
+	SysCall _PrintChar;
+	PrintPushParam _str0;
+	SysCall _PrintString;
+	PrintPushParam n;
+	SysCall _PrintInt;
+	Return;
+	EndFunc;
+main:
+	BeginFunc 28;
+	LCall _empty;
+	PopParams ;
+	SysCall _ScanInt;
+	ScanPopParam i;
+	If i = 0 Goto _L1;
+	i = 0;
+	Goto: _L0;
+_L1:
+	PrintPushParam _str1;
+	SysCall _PrintString;
+_L0:
+	If i >= 10 Goto _L3;
+	PushParam s;
+	PushParam i;
+	_tmp1 = LCall _add;
+	PopParams 8;
+	s = _tmp1;
+	_tmp3 = i + 1;
+	i = _tmp3;
+	Goto: _L0;
+_L3:
+	i = 0;
+_L4:
+	If i >= 5 Goto _L5;
+	_tmp4 = s * s;
+	_tmp5 = i + 1;
+	_tmp6 = _tmp4 / _tmp5;
+	g_y[i] = _tmp6;
+	_tmp4 = i + 1;
+	i = _tmp4;
+	Goto: _L4;
+_L5:
+	_tmp4 = 's';
+	PushParam _tmp4;
+	PushParam s;
+	LCall _output;
+	PopParams 8;
+	_tmp5 = LCall _fun;
+	PopParams ;
+	PrintPushParam _tmp5;
+	SysCall _PrintInt;
+	EndFunc;
